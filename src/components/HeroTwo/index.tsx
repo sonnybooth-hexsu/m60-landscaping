@@ -3,12 +3,11 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import { Animation } from '../Animation';
 import { useCalendlyWidget } from '../../hooks/useCalendlyWidget';
 import { Section } from '../Section';
-import { SocialProfiles } from '../SocialProfiles';
 import { useLocalDataSource } from './data';
 import { PageSection } from '../../types';
 import * as classes from './style.module.css';
 
-export function HeroSection(props: PageSection): React.ReactElement {
+export function HeroSectionTwo(props: PageSection): React.ReactElement {
     const response = useLocalDataSource();
     const data = response.allHeroJson.sections[0];
 

@@ -5761,10 +5761,10 @@ gatsby-source-filesystem@^5.0.0:
     valid-url "^1.0.9"
     xstate "^4.38.0"
 
-gatsby-theme-portfolio-minimal@latest:
-  version "4.6.5"
-  resolved "https://msmg.jfrog.io/artifactory/api/npm/main-npm/gatsby-theme-portfolio-minimal/-/gatsby-theme-portfolio-minimal-4.6.5.tgz#4fcc783db9ff83768984560ef8827ec199dec3e3"
-  integrity sha512-1b/pKpbl9tUty28AI1b2dhAgv+nKv4KPN2XR7JvuebxNd6665DSSLth02SISKg1xek6QYcoKrn10vuWqKVtZhQ==
+gatsby-theme-portfolio-minimal@4.6.4:
+  version "4.6.4"
+  resolved "https://msmg.jfrog.io/artifactory/api/npm/main-npm/gatsby-theme-portfolio-minimal/-/gatsby-theme-portfolio-minimal-4.6.4.tgz#c5a85ccc0f60f7eb005cb54cd71a567bf6a63949"
+  integrity sha512-B35GVGHI7D3heKx0yrn3XUmpdHA8w/OxbCFFL9YrBYIou1P+S3iAUAVJPiZOgVdM5/MfmiDxYvlWy1Cgzjyo2A==
   dependencies:
     "@fontsource/roboto" "^4.5.8"
     fs-extra "^11.1.1"

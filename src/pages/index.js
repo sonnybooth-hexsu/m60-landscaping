@@ -5,8 +5,8 @@ import {
   Seo,
 } from "gatsby-theme-portfolio-minimal";
 
-import { HeroSection } from "../components/Hero";
-import { ArticlesSection } from "../components/Articles";
+import { HeroSectionTwo } from "../components/HeroTwo";
+import { ArticlesSectionTwo } from "../components/ArticlesTwo";
 
 
 export default function IndexPage() {
@@ -14,8 +14,8 @@ export default function IndexPage() {
     <>
       <Seo title="M60 Civils & Landscapes LTD" />
       <Page useSplashScreenAnimation>
-        <HeroSection sectionId="hero" />
-        <ArticlesSection sectionId="articles" heading="Latest Articles" sources={['Medium']} />
+        <HeroSectionTwo sectionId="hero" />
+        <ArticlesSectionTwo sectionId="articles" heading="Latest Articles" sources={['Medium']} />
         <AboutSection sectionId="about" heading="About us" />
       </Page>
     </>

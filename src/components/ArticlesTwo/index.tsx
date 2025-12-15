@@ -27,7 +27,7 @@ interface ArticlesSectionProps extends PageSection {
     sources: ArticleSource[];
 }
 
-export function ArticlesSection(props: ArticlesSectionProps): React.ReactElement {
+export function ArticlesSectionTwo(props: ArticlesSectionProps): React.ReactElement {
     const response = useLocalDataSource();
     const [articles, setArticles] = React.useState<ArticleCard[]>([]);
     const configuration = validateAndConfigureSources(props.sources);
