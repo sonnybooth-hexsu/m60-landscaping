@@ -1,5 +1,4 @@
 import { graphql, useStaticQuery } from 'gatsby';
-import { SocialProfile } from '../SocialProfiles';
 import { ImageObject } from '../../types';
 
 interface HeroSectionQueryResult {
@@ -50,10 +49,6 @@ export const useLocalDataSource = (): HeroSectionQueryResult => {
                         objectFit
                     }
                     intro
-                    socialProfiles {
-                        from
-                        showIcons
-                    }
                     calendly {
                         label
                         username

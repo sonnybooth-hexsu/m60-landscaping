@@ -5,9 +5,5 @@
   "image": {
     "src": "../../images/favicon.png",
     "alt": "Gatsby Logo"
-  },
-  "socialProfiles": {
-    "from": ["Mail"],
-    "showIcons": true
   }
 }
