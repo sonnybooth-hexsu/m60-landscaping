@@ -14,5 +14,9 @@
     "highlight": "come true",
     "suffix": "."
   },
-  "description": ""
+  "description": "",
+  "socialProfiles": {
+    "from": ["Mail"],
+    "showIcons": true
+  }
 }

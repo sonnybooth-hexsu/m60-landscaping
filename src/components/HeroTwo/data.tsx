@@ -49,6 +49,10 @@ export const useLocalDataSource = (): HeroSectionQueryResult => {
                         objectFit
                     }
                     intro
+                    socialProfiles {
+                        from
+                        showIcons
+                    }
                     calendly {
                         label
                         username
