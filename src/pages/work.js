@@ -6,7 +6,9 @@ export default function ImprintPage() {
     <>
       <Seo title="Imprint" useTitleTemplate={true} noIndex={true} />
       <Page>
-        <LegalSection sectionId="imprint" heading="Imprint" />
+          <div style={{ padding: "var(--page-padding)" }}>
+              Loads of pictures of your work and that in here. Any testimonials off people and that.
+          </div>
       </Page>
     </>
   );

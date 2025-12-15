@@ -1,22 +1,19 @@
 {
-  "intro": "Hej",
+  "intro": "I'm Craig",
   "heroPhoto": {
-    "src": "../../images/lego-dummy.png",
+    "src": "../../images/m60-logo.png",
     "alt": "My Photo"
   },
   "image": {
     "src": "../../images/waving-hand.png",
     "alt": "Waving Hand Emoji"
   },
-  "title": "I'm a Gatsby Starter",
+  "title": "I'm a landscaper",
   "subtitle": {
-    "prefix": "I do all the setup ",
-    "highlight": "for you",
+    "prefix": "I here to make your ideas ",
+    "highlight": "come true",
     "suffix": "."
   },
-  "description": "A Gatsby Starter Project to easily get started with Portfolio Minimal theme.",
-  "socialProfiles": {
-    "from": ["LinkedIn", "Medium", "Github", "Mail"],
-    "showIcons": false
-  }
+  "description": "",
+  "socialProfiles": {}
 }

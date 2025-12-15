@@ -6,7 +6,9 @@ export default function PrivacyPage() {
     <>
       <Seo title="Privacy Policy" useTitleTemplate={true} noIndex={true} />
       <Page>
-        <LegalSection sectionId="privacy" heading="Privacy Policy" />
+          <div style={{ padding: "var(--page-padding)" }}>
+              Address and email and stuff in here maybe a contact form? Social media links?
+          </div>
       </Page>
     </>
   );
