@@ -10,10 +10,6 @@ interface HeroSectionQueryResult {
             image: ImageObject;
             intro: string;
             heroPhoto: ImageObject;
-            socialProfiles: {
-                from: SocialProfile[];
-                showIcons: boolean;
-            };
             calendly: {
                 label: string;
                 username: string;
