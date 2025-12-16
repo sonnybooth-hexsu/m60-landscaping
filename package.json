@@ -15,7 +15,8 @@
     "gatsby": "^5.0.1",
     "gatsby-theme-portfolio-minimal": "4.6.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-image-gallery": "^1.4.0"
   },
   "author": "Sonny Booth",
   "license": "0BSD",

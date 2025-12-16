@@ -1,5 +1,4 @@
 import React from 'react';
-import { GatsbyImage } from 'gatsby-plugin-image';
 import SkeletonLoader from 'tiny-skeleton-loader-react';
 import { ImageObject } from '../../types';
 import * as classes from './style.module.css';
