@@ -7,7 +7,11 @@ import { useSiteMetadata } from '../../hooks/useSiteMetadata';
 import { useLocalDataSource, useMediumFeed } from './data';
 import { PageSection} from '../../types';
 import * as classes from './style.module.css';
-import logo from '../../../content/images/patio.jpg'; // Adjust the path as needed
+import workone from '../../../content/images/workone.jpeg';
+import worktwo from '../../../content/images/worktwo.jpeg'; // Adjust the path as needed
+import workthree from '../../../content/images/workthree.jpeg'; // Adjust the path as needed
+import workfour from '../../../content/images/workfour.jpeg'; // Adjust the path as needed
+
 
 enum ArticleSource {
     Medium = 'medium',
@@ -45,7 +49,6 @@ export function ArticlesSectionTwo(props: ArticlesSectionProps): React.ReactElem
                         category: article.categories[0],
                         title: article.title,
                         publishedAt: new Date(article.pubDate.replace(/-/g, '/')), // https://stackoverflow.com/a/5646753
-                        link: article.link,
                     });
                 });
             }
@@ -59,8 +62,6 @@ export function ArticlesSectionTwo(props: ArticlesSectionProps): React.ReactElem
                         category: article.categories[0],
                         title: article.title,
                         publishedAt: new Date(article.date.replace(/-/g, '/')),
-                        link: article.slug,
-                        readingTime: article.readingTime.text,
                     });
                 });
             }
@@ -81,7 +82,7 @@ export function ArticlesSectionTwo(props: ArticlesSectionProps): React.ReactElem
         title: "Patio",
         publishedAt: "11/11/2025",
         image: {
-            src: logo,
+            src: workone,
             alt: 'Patio Image',
             objectFit: 'cover',
         }
@@ -91,7 +92,7 @@ export function ArticlesSectionTwo(props: ArticlesSectionProps): React.ReactElem
             title: "Patio",
             publishedAt: "11/11/2025",
             image: {
-                src: logo,
+                src: worktwo,
                 alt: 'Patio Image',
                 objectFit: 'cover',
             }
@@ -101,7 +102,17 @@ export function ArticlesSectionTwo(props: ArticlesSectionProps): React.ReactElem
             title: "Patio",
             publishedAt: "11/11/2025",
             image: {
-                src: logo,
+                src: workthree,
+                alt: 'Patio Image',
+                objectFit: 'cover',
+            }
+        },
+        {
+            category: "Garden",
+            title: "Patio",
+            publishedAt: "11/11/2025",
+            image: {
+                src: workfour,
                 alt: 'Patio Image',
                 objectFit: 'cover',
             }
@@ -110,13 +121,13 @@ export function ArticlesSectionTwo(props: ArticlesSectionProps): React.ReactElem
 
     return (
         <Animation type="fadeUp" delay={1000}>
-            <Section anchor={props.sectionId} heading="Latest work">
+            <Section anchor={props.sectionId} heading="Work Highlights">
                 <Slider additionalClasses={[classes.Articles]}>
                     {latestWork.length > 0
-                        ? latestWork.slice(0, 3).map((article, key) => {
+                        ? latestWork.slice(0, 4).map((article, key) => {
                               return <ArticleCard showBanner={true} key={key} data={article} />;
                           })
-                        : [...Array(3)].map((_, key) => {
+                        : [...Array(4)].map((_, key) => {
                               return <ArticleCardSkeleton key={key} />;
                           })}
                 </Slider>

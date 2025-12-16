@@ -1,12 +1,12 @@
 import React from "react";
 import {
-  AboutSection,
   Page,
   Seo,
 } from "gatsby-theme-portfolio-minimal";
 
 import { HeroSectionTwo } from "../components/HeroTwo";
 import { ArticlesSectionTwo } from "../components/ArticlesTwo";
+import { AboutSection } from "../components/About";
 
 
 export default function IndexPage() {

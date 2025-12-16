@@ -26,28 +26,15 @@ export function ArticleCard(props: ArticleCardProps): React.ReactElement {
             className={classes.Card}
             style={darkModeEnabled ? { border: '0.125rem solid var(--primary-color)' } : undefined}
         >
-            {props.showBanner && (
-                <div className={classes.Banner}>
-                    {props.data.image && props.data.image.src && (
-                        <img
-                            className={classes.ImageWrapper}
-                            imgClassName={classes.Image}
-                            objectFit={props.data.image.objectFit || 'cover'}
-                            src={props.data.image.src}
-                            alt={props.data.image.alt || props.data.title}
-                        />
-                    )}
-                </div>
+            {props.data.image && props.data.image.src && (
+                <img
+                    className={classes.ImageWrapper}
+                    imgClassName={classes.Image}
+                    objectFit={props.data.image.objectFit || 'cover'}
+                    src={props.data.image.src}
+                    alt={props.data.image.alt || props.data.title}
+                />
             )}
-            <div className={classes.DescriptionWrapper}>
-                <span className={classes.Category}>
-                    <u>{props.data.category}</u>
-                </span>
-                <h4 className={classes.Title}>{props.data.title}</h4>
-                <div className={classes.Details}>
-                    {props.data.publishedAt}
-                </div>
-            </div>
         </article>
     );
 
